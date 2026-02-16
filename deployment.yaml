@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dravaono-playground
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dravaono-playground
+  template:
+    metadata:
+      labels:
+        app: dravaono-playground
+    spec:
+      containers:
+        - name: dravaono-playground
+          image: wil42/playground:v1
+          ports:
+            - containerPort: 8888

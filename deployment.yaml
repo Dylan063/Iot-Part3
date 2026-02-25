@@ -1,4 +1,4 @@
-apiVersion: apps/v2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dravaono-playground
@@ -14,7 +14,7 @@ spec:
         app: dravaono-playground
     spec:
       containers:
-        - name: dravaono-playground
-          image: wil42/playground:v1
-          ports:
-            - containerPort: 8888
+      - name: dravaono-playground
+        image: wil42/playground:v2
+        ports:
+        - containerPort: 8888

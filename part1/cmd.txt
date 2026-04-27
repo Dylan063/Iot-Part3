@@ -1,0 +1,8 @@
+make up 
+vagrant ssh [name]
+hostname
+ip a (sur vm)
+k3s --version
+kubectl version (server)
+kubectl get nodes 
+systemctl status k3s-agent (worker)

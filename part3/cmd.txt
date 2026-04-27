@@ -1,0 +1,20 @@
+k3d cluster list
+kubectl get nodes
+
+kubectl get ns
+
+kubectl get pods -n argocd
+
+argocd app list
+
+kubectl get pods -n dev
+
+curl http://localhost:8888
+
+CHANGEMENT DANS GITHUB
+
+aller sur github modifier image: wil42/playground -> v2 att 30 sec 
+
+kubectl get pods -n dev
+curl http://localhost:8888
+
